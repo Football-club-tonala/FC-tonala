@@ -1,0 +1,41 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+body {
+  background-color: #f0f2f5;
+}
+
+.player-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.player-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.staff-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.validation-message {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.validation-message.visible {
+  opacity: 1;
+}
